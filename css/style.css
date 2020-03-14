@@ -1,0 +1,39 @@
+html {
+        width: 720px;
+        height: 500px;
+    }
+body{
+    background-color: #f8f9fa!important;
+}
+
+label{
+    margin-bottom:0 !important;
+}
+
+#jstree{
+    height:270px;
+    overflow-y: scroll;
+    font-size: .75rem;
+}
+   
+
+.form-control{
+    font-size: .7rem!important;
+   
+}
+.btn-sm,
+.input-group-sm>.form-control{
+    padding: .0rem .5rem!important;
+    height: calc(1.5rem + 2px)!important;
+}
+
+.input-group-sm>.input-group-prepend>.input-group-text {
+    height: calc(1.5rem + 2px)!important;
+}
+
+    
+
+.t-area-font{
+    font-size: .575rem;
+    color: #495057;
+}

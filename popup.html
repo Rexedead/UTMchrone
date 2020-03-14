@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./themes/default/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/fa.all.css" />
+
+</head>
+
+<body>
+  <div class="ml-1">
+
+    
+      <div class="input-group mt-1 mb-1 input-group-sm">
+        <div class="input-group-prepend">
+          <span class="input-group-text">URL</span>
+        </div>
+        <input type="text" class="form-control mr-3" id="url">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="short_header">
+          <label class="custom-control-label" for="short_header">
+            <i class="far fa-hand-scissors" aria-hidden="true"></i>
+          </label>
+        </div>
+        <button class="btn btn-sm btn-secondary btn-primary ml-2" id="clear_button">cls</button>
+        <button class="btn btn-sm btn-success btn-primary ml-2 mr-1" id="push">push</button>
+      </div>
+    
+
+
+
+    <form class="form-inline">
+
+
+      <div class="input-group-sm pb-2">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">UTM_Source</label>
+        </div>
+
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="utm_source">
+            <option value="yandex">yandex</option>
+            <option value="google">google</option>
+          </select>
+        </div>
+
+      </div>
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">UTM_Medium</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="utm_medium">
+            <option value="cpc">cpc</option>
+            <option value="cpm">cpm</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Аккаунт</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="acc">
+            <option value="edumsk-qt" data-short="АккМск">АккМск</option>
+            <option value="eduspb-qt" data-short="АккСПб">АккСПб</option>
+            <option value="edurussia-qt" data-short="АккРФ">АккРоссия</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">М</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="m">
+            <option value="m1-qt">М1</option>
+            <option value="m2-qt">М2</option>
+            <option value="m3-qt">М3</option>
+            <option value="m4-qt">М4</option>
+            <option value="m5-qt">М5</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Регион</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="region">
+            <option value="rf" data-short="РФ">Россия</option>
+            <option value="cfo" data-short="ЦФО">ЦФО</option>
+            <option value="szfo" data-short="СЗФО">СЗФО</option>
+            <option value="msk" data-short="Мск">Москва</option>
+            <option value="spb" data-short="СПБ">СПб</option>
+            <option value="sng" data-short="СНГ">СНГ</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Устройство</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="device">
+            <option value="desktop" data-short="ПК">Компьютеры</option>
+            <option value="mobile" data-short="Моб">Мобильные</option>
+            <option value="all" data-short="Устр">Все устройства</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Время суток</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="daytime">
+            <option value="day" data-short="День">День</option>
+            <option value="night" data-short="Ночь">Ночь</option>
+            <option value="24h" data-short="24">Круглосуточно</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Источник</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="ssource">
+            <option value="yandex" data-short="Я">Яндекс</option>
+            <option value="google" data-short="G">Google</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Таргетинг</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="targeting">
+            <option value="key" data-short="КС">КС</option>
+            <option value="content" data-short="Конт">Контент</option>
+            <option value="retarget" data-short="Рет">Ретаргетинг</option>
+            <option value="audience" data-short="Ауд">Аудитории</option>
+            <option value="look-a-like" data-short="Like">Похожие</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Сеть</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="network">
+            <option value="poisk">Поиск</option>
+            <option value="rsya">РСЯ</option>
+            <option value="kms">КМС</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Тип ключевых слов</label>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-group-sm w-100" id="wordtype">
+            <option value="tranz">Транз</option>
+            <option value="info">Инф</option>
+            <option value="brand">Бренд</option>
+            <option value="comp">Конк</option>
+            <option value="none">none</option>
+          </select>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="input-group-sm pb-2 pl-1">
+        <div class="input-group-prepend">
+          <label class="input-group-text w-100">Дата</label>
+        </div>
+
+        <input type="date" class="form-control" id="date_one">
+        <input type="date" class="form-control" id="date_two">
+      </div>
+
+
+
+
+
+    </form>
+
+
+
+
+
+    <div class="row">
+      <div class="col-5">
+
+
+
+
+
+        <form>
+          <div class="input-group mb-1 input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Артикул</span>
+            </div>
+            <input type="text" name="article" class="form-control" value="none" id="article">
+          </div>
+        </form>
+
+        <form>
+          <div class="input-group mb-1 input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Наименование ОП</span>
+            </div>
+            <input type="text" id="op_name" name="op_name" class="form-control" value="none"/>
+          </div>
+        </form>
+
+        <form>
+          <div class="input-group input-group-sm mb-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Код программы</span>
+            </div>
+            <input type="text" id="mscode" name="mscode" class="form-control" value="none" />
+          </div>
+        </form>
+
+
+
+
+     
+        <div class="input-group-sm mr-1 mb-1">
+          <input class="search-input form-control" placeholder="Искать тут... вроде.."></input>
+      </div>
+        <div id="jstree"></div>
+
+      </div>
+
+
+      <div class="col-7 ">
+        <div class="form-group mr-1 t-area-font">
+          <div>Название кампании
+            <span id="camp_len"></span>
+          </div>
+          <textarea class="form-control rounded-0" rows="5" id="textarea_camp"></textarea>
+          <label>Название задачи</label>
+          <textarea class="form-control rounded-0" rows="3" id="textarea_task"></textarea>
+          <label>code</label>
+          <textarea class="form-control rounded-0" rows="11" id="textarea_code"></textarea>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+<footer>
+  <script src="jquery-3.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="bootstrap.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jstree.js" type="text/javascript" charset="utf-8"></script>
+  <script src="translit.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jstree-conf.js" type="text/javascript" charset="utf-8"></script>
+  <script src="popup.js"></script>
+
+</footer>
+
+</html>
